@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Brinque com o Wapples</h1>
+
+    <p id="reacao"></p>
+
+    <img id="imgWapples" src="/img/wapples.png" alt="porco">
+
+    <script>
+        const imgWapples = document.getElementById("imgWapples");
+
+        imgWapples.addEventListener("mouseenter", () => {
+            document.getElementById("reacao").innerText = "EI, o que você tá pensando em fazer?";
+        })
+        imgWapples.addEventListener("mouseleave", () => {
+            document.getElementById("reacao").innerText = "Melhor assim mesmo";
+        })
+        imgWapples.addEventListener("mousemove", () => {
+            document.getElementById("reacao").innerText = "Faz cosquinha";
+        })
+        imgWapples.addEventListener("click", () => {
+            document.getElementById("reacao").innerText = "EI, PARA COM ISSO 😂";
+        })
+    </script>
+</body>
+</html>
